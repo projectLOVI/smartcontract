@@ -1,0 +1,50 @@
+{
+  "name": "project_name",
+  "version": "1.0.0",
+  "description": "basic solidity template",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test --network hardhat",
+    "localnode": "hardhat node",
+    "test:local": "hardhat test --network localhost",
+    "clean": "hardhat clean",
+    "compile": "hardhat compile",
+    "contract-size": "hardhat size-contracts",
+    "doc": "hardhat docgen",
+    "coverage": "hardhat coverage --solcoverjs ./.solcover.js --temp build --network hardhat",
+    "flatten": "hardhat flatten contracts/file_name.sol > flatten/file_name.sol",
+    "lint": "yarn run lint:sol && yarn run lint:ts && yarn run prettier && yarn run prettier:list-different",
+    "verify-polygon": "hardhat verify --network polygon",
+    "verify-mumbai": "hardhat verify --network mumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network local",
+    "deploy": "hardhat run scripts/deploy.ts --network $0",
+    "verify": "hardhat run scripts/verify.ts --network $0"
+  },
+  "keywords": [
+    "hardhat",
+    "solidity"
+  ],
+  "author": "sourav suman",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.5",
+    "@truffle/dashboard-hardhat-plugin": "^0.1.1",
+    "chai": "^4.3.7",
+    "hardhat": "^2.14.0",
+    "hardhat-docgen": "^1.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "chai-bignumber": "^3.1.0",
+    "dotenv": "^16.0.3",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.3.10",
+    "solidity-coverage": "^0.7.22"
+  }
+}

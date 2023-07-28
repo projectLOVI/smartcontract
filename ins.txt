@@ -1,0 +1,2 @@
+if facing deployment issue: https://stackoverflow.com/questions/70393986/error-in-plugin-nomiclabs-hardhat-etherscan-the-contract-verification-failed
+eg: npm run verify-mumbai 0x586E1055c1fBA213CF1359d9b22F04a83ED4b8f4 0xFB062c9dEe43D4eC6E91aE5Afec80dE96f5eD998 90999090 400 0x05416460deb76d57af601be17e777b93592d8d4d4a4096c57876a91c84f4a712 ipfs://QmYKJFtaGmkfhf1iXVka3ESwKKgVNpqxVCZ9Mo4cCW1PgZ ipfs://QmXwcahrS6bAM4iqA3qH9ZyEwKundixfZFTka7t3MoB3se 8888 1999
