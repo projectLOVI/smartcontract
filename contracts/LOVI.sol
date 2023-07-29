@@ -110,7 +110,7 @@ contract LOVI is ERC721, ERC721Enumerable,ERC2981, Ownable,ReentrancyGuard {
 
     /// @dev Updates the treasury address where minting fees are sent
     /// @param _treasury The new treasury address
-    function updateTreasury(address payable _treasury) external onlyOwner{
+    function updateTreasury(address payable _treasury) external{
         require(_treasury != address(0),"Treasury can not be 0 address");
         treasuryAddress = _treasury;
     }
@@ -125,7 +125,7 @@ contract LOVI is ERC721, ERC721Enumerable,ERC2981, Ownable,ReentrancyGuard {
     /// @dev Updates the royalty receiver address and fee numerator for LOVI tokens
     /// @param _royaltyReceiver The new address to receive royalties
     /// @param feeNumerator The new royalty fee numerator
-    function updateRoyalty(address _royaltyReceiver, uint96 feeNumerator) external onlyOwner {
+    function updateRoyalty(address _royaltyReceiver, uint96 feeNumerator) external {
         _setDefaultRoyalty(_royaltyReceiver, feeNumerator);
     }
 
